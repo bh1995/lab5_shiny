@@ -1,8 +1,11 @@
 library(shiny)
 
 shinyUI(fluidPage(
-  titlePanel(title = "Lab5"),
-  sidebarPanel("some stuff",
-  mainPanel("som more stuff"))
-)
-)
+  titlePanel(title = "Lab 5"),
+  sidebarLayout(
+   sidebarPanel(("some stuff"),
+               textInput("info", "enter the desired info", "")),
+  mainPanel("some more stuff")
+    )
+
+  ))
